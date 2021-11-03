@@ -6,7 +6,7 @@ pipeline {
            steps {
                sh 'rm -rf *'
                git branch: 'master', url: 'https://github.com/Rohan243/aws-eks-terraform.git'
-               sh 'terraform init -backend-config="access_key=<your access key>" -backend-config="secret_key=<your secret key>"'
+               sh 'terraform init'
            }
        }
        stage('terraform apply') {
