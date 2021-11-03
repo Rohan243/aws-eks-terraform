@@ -1,4 +1,3 @@
-
 @Library('github.com/releaseworks/jenkinslib')
 pipeline {
    agent any
