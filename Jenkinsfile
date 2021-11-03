@@ -5,7 +5,7 @@ pipeline {
        stage('prepare workspace') {
            steps {
                sh 'rm -rf *'
-               git branch: 'master', url: 'https://github.com/berndonline/aws-eks-terraform.git'
+               git branch: 'master', url: 'https://github.com/Rohan243/aws-eks-terraform.git'
                sh 'terraform init'
            }
        }
